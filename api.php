@@ -74,7 +74,7 @@ if ($method === 'POST' && $action === 'acortar') {
     echo json_encode(['error' => 'URL no encontrada']);
     exit;
     }
-    header('Location: ' . $urlOriginal);
+    echo json_encode(['urlOriginal' => $urlOriginal]);
     exit;
 
 // Maneja cualquier combinacion de método o accion no soportada.
