@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    max-width: 700px;
+    width: 100%;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2em;
+    text-align: center;
+}
+
+h3 {
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+input:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+button {
+    padding: 12px 30px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #764ba2;
+}
+
+.error {
+    color: red;
+    margin-bottom: 10px;
+}
+
+.resultado {
+    display: none;
+    background: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.resultado p {
+    margin-bottom: 8px;
+    color: #333;
+}
+
+ul {
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.boton-regresar {
+    margin-top: 20px;
+    text-align: right;
+}

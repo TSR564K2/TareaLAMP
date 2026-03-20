@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html id="todo2" lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+</head>
+<body>
+    <div id="container" class="container">
+        <h1>URL Shortener</h1>
+        <p>Make your long URLs short and shareable</p>
+        
+        <div class="input-group">
+            <input type="url" id="urlInput" placeholder="Enter your long URL here...">
+            <button onclick="shortenUrl()">Acortar</button>
+        </div>
+        
+        <div class="result" id="result">
+            <p id="resultText"></p>
+        </div>
+
+        
+        <div style="margin-top: 20px; text-align: center;">
+            <button onclick="cargarVistaParcial('estadisticas.html')">Ver estadisticas</button>
+        </div>
+    </div>
+    
+     <!-- Carga Chart.js en la vista base para que esté disponible antes de renderizar la vista parcial de estadísticas -->
+     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+     <script src="app.js"></script>
+</body>
+</html>

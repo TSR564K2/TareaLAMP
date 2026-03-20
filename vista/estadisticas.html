@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html id="todo" lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estadisticas</title>
+    <link rel="stylesheet" href="estadisticas.css">
+</head>
+<body>
+    <div id="container" class="container">
+        <h1>Estadisticas</h1>
+
+        <div class="input-group">
+            <input type="text" id="codigoInput" placeholder="Ingrese el codigo de la URL corta">
+            <button id="botonBuscar">Buscar</button>
+        </div>
+
+        <div id="error" class="error"></div>
+
+        <div id="resultado" class="resultado" style="display: none;">
+            <p><strong>URL Original:</strong> <span id="urlOriginal"></span></p>
+            <p><strong>Fecha de creacion:</strong> <span id="fecha"></span></p>
+            <p><strong>Total de accesos:</strong> <span id="totalAccesos"></span></p>
+
+            <h3>Paises que accedieron</h3>
+            <ul id="listaPaises"></ul>
+
+            <h3>Accesos por dia</h3>
+            <canvas id="grafica" width="600" height="300"></canvas>
+        </div>
+
+        <div style="margin-top: 20px; text-align: center;">
+            <button onclick="cargarVistaParcial('index.html')">Regresar</button>
+        </div>
+        
+    </div>
+
+    
+
+</body>
+</html>
