@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirigiendo...</title>
+</head>
+<body>
+    <script>
+        const codigo = window.location.pathname.split('/').pop();
+        
+        fetch(`/api.php?action=redirigir&codigo=${codigo}`)
+            .then(response => response.json())
+            .then(data => {
+                if (data.urlOriginal) {
+                    window.location.href = data.urlOriginal;
+                } else {
+                    document.body.innerHTML = '<p>URL no encontrada</p>';
+                }
+            })
+            .catch(() => {
+                document.body.innerHTML = '<p>Error al redirigir</p>';
+            });
+    </script>
+</body>
+</html>
